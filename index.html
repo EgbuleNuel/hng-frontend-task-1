@@ -12,7 +12,7 @@
         <div>
           <h2>
             Username:
-            <span id="slackUserName" title="Slack Username"
+            <span data-testid="slackUserName" title="Slack Username"
               >Egbule Emmanuel</span
             >
           </h2>
@@ -20,7 +20,7 @@
         <div>
           <h2>Profile Image:</h2>
           <img
-            id="slackDisplayImage"
+            data-testid="slackDisplayImage"
             src="/assets/img/profile-img.jpg"
             alt="Egbule Emmanuel"
             title="Slack Profile Image"
@@ -30,25 +30,32 @@
           <h2>Current Day and Time (UTC):</h2>
           <h2>
             <span
-              id="currentDayOfTheWeek"
+              data-testid="currentDayOfTheWeek"
+              id="currentDay"
               title="Current Day of the Week"
             ></span>
           </h2>
           <h2>
-            <span id="currentUTCTime" title="Current Time in UTC"></span>
+            <span
+              data-testid="currentUTCTime"
+              id="currentTime"
+              title="Current Time in UTC"
+            ></span>
           </h2>
         </div>
         <div>
           <h2>
             Track:
-            <span id="myTrack" title="My HNG Track">Front-End</span>
+            <span data-testid="myTrack" title="My HNG Track"
+              >Front-End</span
+            >
           </h2>
         </div>
         <div>
           <h2>
             GitHub Link:
             <a
-              id="githubURL"
+              data-testid="githubURL"
               href="https://github.com/EgbuleNuel/hng-frontend-task-1"
               target="_blank"
               title="Check out this repository"

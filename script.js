@@ -15,8 +15,8 @@ function updateDateTime() {
 
   const currentTime = dateObject.toISOString().substr(11, 8);
 
-  document.getElementById("currentDayOfTheWeek").textContent = dayOfWeek;
-  document.getElementById("currentUTCTime").textContent = currentTime;
+  document.getElementById("currentDay").textContent = dayOfWeek;
+  document.getElementById("currentTime").textContent = currentTime;
 }
 
 updateDateTime();
