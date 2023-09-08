@@ -10,7 +10,12 @@
       <h1>Nuel's Profile</h1>
       <div class="content">
         <div>
-          <h2>Username: <span id="slackUserName">Egbule Emmanuel</span></h2>
+          <h2>
+            Username:
+            <span id="slackUserName" title="Slack Username"
+              >Egbule Emmanuel</span
+            >
+          </h2>
         </div>
         <div>
           <h2>Profile Image:</h2>
@@ -18,28 +23,41 @@
             id="slackDisplayImage"
             src="/assets/img/profile-img.jpg"
             alt="Egbule Emmanuel"
+            title="Slack Profile Image"
           />
         </div>
         <div>
           <h2>Current Day and Time (UTC):</h2>
-          <h2><span id="currentDayOfTheWeek"></span></h2>
-          <h2><span id="currentUTCTime"></span></h2>
+          <h2>
+            <span
+              id="currentDayOfTheWeek"
+              title="Current Day of the Week"
+            ></span>
+          </h2>
+          <h2>
+            <span id="currentUTCTime" title="Current Time in UTC"></span>
+          </h2>
         </div>
         <div>
-          <h2>Track: <span id="myTrack">Front-End</span></h2>
+          <h2>
+            Track:
+            <span id="myTrack" title="My HNG Track">Front-End</span>
+          </h2>
         </div>
         <div>
           <h2>
             GitHub Link:
-            <span
-              ><a id="githubURL" href="" title="Check out this repository"
-                >Project Repo</a
-              ></span
+            <a
+              id="githubURL"
+              href="https://github.com/EgbuleNuel/hng-frontend-task-1"
+              target="_blank"
+              title="Check out this repository"
+              >Project Repo</a
             >
           </h2>
         </div>
       </div>
-      <script src="script.js" type="module"></script>
+      <script src="script.js"></script>
     </body>
   </html>
 </html>

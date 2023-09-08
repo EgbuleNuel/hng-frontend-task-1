@@ -53,14 +53,16 @@ img {
 
 @media (max-width: 477px) {
   body {
-    width: 350px;
+    width: 370px;
     padding: 5%;
+    margin: 0;
+    font-size: 14px;
   }
   .content {
     width: 90%;
   }
 
   img {
-    width: 100%;
+    width: 99%;
   }
 }
