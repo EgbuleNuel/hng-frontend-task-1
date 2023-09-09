@@ -1,8 +1,9 @@
-function updateDateTime() {
-  const currentUTCDate = new Date().toUTCString();
-  const dateObject = new Date(currentUTCDate);
+const currentUTCDay = document.getElementById("currentDay");
+const currentUTCTime = document.getElementById("currentTime");
+const date = new Date();
 
-  const daysOfWeek = [
+const updateDate = () => {
+  const daysOfTheWeek = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -11,14 +12,17 @@ function updateDateTime() {
     "Friday",
     "Saturday",
   ];
-  const dayOfWeek = daysOfWeek[dateObject.getUTCDay()];
+  const dayIndex = date.getDay();
+  const currentDay = daysOfTheWeek[dayIndex];
+  currentUTCDay.innerText = currentDay;
+};
 
-  const currentTime = dateObject.getTime();
+const updateUTCTime = () => {
+  const date = new Date();
+  const utcTimeMilliseconds = date.getTime();
+  currentUTCTime.textContent = utcTimeMilliseconds;
+};
 
-  document.getElementById("currentDay").textContent = dayOfWeek;
-  document.getElementById("currentTime").textContent = currentTime;
-}
-
-updateDateTime();
-
-setInterval(updateDateTime, 1000);
+updateDate();
+updateUTCTime();
+setInterval(updateUTCTime, 1);
