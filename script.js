@@ -13,7 +13,7 @@ function updateDateTime() {
   ];
   const dayOfWeek = daysOfWeek[dateObject.getUTCDay()];
 
-  const currentTime = dateObject.toISOString().substr(11, 8);
+  const currentTime = dateObject.getTime();
 
   document.getElementById("currentDay").textContent = dayOfWeek;
   document.getElementById("currentTime").textContent = currentTime;
